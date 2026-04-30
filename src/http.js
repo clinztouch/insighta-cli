@@ -6,7 +6,7 @@ const { API_BASE_URL, getCredentials, saveCredentials, clearCredentials } = requ
 
 async function refreshTokens(refreshToken) {
     const response = await axios.post(`${API_BASE_URL}/auth/refresh`, {
-        refresh_Token: refreshToken
+        refresh_token: refreshToken
     });
     return response.data;
 }
